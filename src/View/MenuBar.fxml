@@ -1,0 +1,13 @@
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+
+<MenuBar fx:controller="Controller.MenuBarController" xmlns:fx="http://javafx.com/fxml">
+    <menus>
+        <Menu text="Settings">
+            <items>
+                <MenuItem text="Preferences" onAction="#loadSettingsWindow"/>
+            </items>
+        </Menu>
+    </menus>
+</MenuBar>

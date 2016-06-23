@@ -1,0 +1,80 @@
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Button?>
+
+<GridPane fx:controller="Controller.SettingsController" xmlns:fx="http://javafx.com/fxml" alignment="CENTER" id="app" vgap="20" hgap="20">
+
+    <!-- QUESTION TYPES -->
+    <fx:define>
+        <ToggleGroup fx:id="questionType"/>
+    </fx:define>
+
+    <VBox spacing="5" GridPane.columnIndex="0" GridPane.rowIndex="1">
+        <Text text="Question"/>
+        <Text text="Type"/>
+    </VBox>
+
+    <VBox spacing="20" styleClass="bordered" GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <padding> <Insets top="25" right="50" bottom="25" left="50"/> </padding>
+        <HBox spacing="0">
+            <RadioButton fx:id="transliterationQuestion" onAction="#transliterationQuestionPressed"
+                         toggleGroup="$questionType"/>
+            <Label text="Transliteration"/>
+        </HBox>
+        <HBox spacing="0">
+            <RadioButton fx:id="englishQuestion" onAction="#englishQuestionPressed" toggleGroup="$questionType"/>
+            <Label text="English"/>
+        </HBox>
+        <HBox spacing="0">
+            <RadioButton fx:id="persianQuestion" onAction="#persianQuestionPressed" toggleGroup="$questionType"/>
+            <Label text="Persian"/>
+        </HBox>
+    </VBox>
+
+    <!-- ANSWER TYPES -->
+    <VBox spacing="5" GridPane.columnIndex="2" GridPane.rowIndex="1">
+        <Text text="Answer"/>
+        <Text text="Type"/>
+    </VBox>
+
+    <VBox spacing="20" styleClass="bordered" GridPane.columnIndex="3" GridPane.rowIndex="1">
+        <padding> <Insets top="25" right="50" bottom="25" left="50"/> </padding>
+        <HBox spacing="0">
+            <CheckBox fx:id="transliterationAnswer"/>
+            <Label text="Transliteration"/>
+        </HBox>
+        <HBox spacing="0">
+            <CheckBox fx:id="englishAnswer"/>
+            <Label text="English"/>
+        </HBox>
+        <HBox spacing="0">
+            <CheckBox fx:id="persianAnswer"/>
+            <Label text="Persian"/>
+        </HBox>
+    </VBox>
+
+    <!-- INCLUDED UNITS -->
+    <VBox spacing="5" GridPane.columnIndex="0" GridPane.rowIndex="2">
+        <Text text="Included"/>
+        <Text text="Units"/>
+    </VBox>
+
+    <HBox fx:id="unitBox" spacing="50" styleClass="bordered" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.columnSpan="3">
+        <padding> <Insets top="25" right="50" bottom="25" left="50"/> </padding>
+        <!-- injection will add unit checkboxes here -->
+    </HBox>
+
+    <!-- BUTTONS -->
+    <HBox spacing="20" alignment="CENTER_RIGHT" GridPane.columnIndex="0" GridPane.rowIndex="3" GridPane.columnSpan="4">
+        <Button text="Cancel" onAction="#cancelPressed"/>
+        <Button text="Apply" onAction="#applyPressed"/>
+    </HBox>
+
+</GridPane>

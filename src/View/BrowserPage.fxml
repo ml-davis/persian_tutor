@@ -1,0 +1,28 @@
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<VBox fx:controller="Controller.BrowserController" xmlns:fx="http://javafx.com/fxml" alignment="CENTER" id="app" spacing="20">
+    <padding> <Insets left="150" right="150"/> </padding>
+
+    <Text fx:id="unitText" text="Unit 1" id="title"/>
+
+    <HBox>
+        <HBox prefWidth="495">
+            <Button text="Take Quiz" onAction="#initializeQuiz"/>
+        </HBox>
+        <HBox spacing="20" alignment="CENTER_RIGHT">
+            <Label text="Search"/>
+            <TextField fx:id="searchField" prefWidth="500" onKeyReleased="#search"/>
+        </HBox>
+    </HBox>
+    <!-- TextArea injected by controller -->
+
+    <Pagination fx:id="unitSelector"/>
+
+</VBox>

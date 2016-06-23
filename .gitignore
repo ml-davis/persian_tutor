@@ -1,0 +1,8 @@
+# Intellij Settings
+.idea
+
+# Vim Temporary Files
+*.swp
+
+# Binary Files and Artifacts
+/out/

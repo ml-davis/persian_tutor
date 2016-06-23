@@ -1,0 +1,23 @@
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextArea?>
+<VBox fx:controller="Controller.UnknownPhraseController" xmlns:fx="http://javafx.com/fxml" alignment="CENTER" id="app" spacing="20">
+    <padding> <Insets left="150" right="150"/> </padding>
+
+    <Text text="Checked Phrases" id="title"/>
+
+    <HBox spacing="20">
+        <Button text="Exit" onAction="#goToBrowserPage"/>
+        <Button text="Take Quiz" onAction="#initializeQuiz"/>
+        <HBox prefWidth="850" alignment="CENTER_RIGHT">
+            <Text fx:id="percentCorrect"/>
+        </HBox>
+    </HBox>
+
+    <TextArea fx:id="textArea" editable="false" prefHeight="450"/>
+
+</VBox>

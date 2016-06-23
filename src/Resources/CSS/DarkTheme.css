@@ -1,6 +1,5 @@
 .menu-bar {
     -fx-background-color: #3C3F41;
-    /*-fx-background-color: #222222;*/
 }
 
 .menu .label {
@@ -19,13 +18,18 @@
 }
 
 #title {
+    -fx-font-family: "Beyond The Mountains";
+    -fx-font-size: 40px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 2, 1, 1, 1);
+}
+
+#unitText {
     -fx-font-size: 30px;
     -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 2, 1, 1, 1);
 }
 
 Text {
     -fx-font-size: 16px;
-    /*-fx-font-size: 26px;*/
     -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 1, 1, 1, 1);
     -fx-fill: #ADADAD;
 }
@@ -78,8 +82,13 @@ Hyperlink:focused {
     -fx-text-fill: #ADADAD;
 }
 
+@font-face {
+    src: url("../Fonts/beyond_the_mountains.ttf");
+    src: url("../Fonts/SourceCodePro-Semibold.ttf");
+}
+
 .text-area {
-    -fx-font-family: monospace;
+    -fx-font-family: "Source Code Pro Semibold";
     -fx-text-fill: #ADADAD;
 }
 

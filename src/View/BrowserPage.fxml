@@ -10,7 +10,7 @@
 <VBox fx:controller="Controller.BrowserController" xmlns:fx="http://javafx.com/fxml" alignment="CENTER" id="app" spacing="20">
     <padding> <Insets left="150" right="150"/> </padding>
 
-    <Text fx:id="unitText" text="Unit 1" id="title"/>
+    <Text fx:id="unitText" text="Unit 1" id="unitText"/>
 
     <HBox>
         <HBox prefWidth="495">

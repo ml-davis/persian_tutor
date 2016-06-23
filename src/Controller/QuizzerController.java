@@ -41,9 +41,9 @@ public class QuizzerController implements Initializable {
     @FXML
     public void showSolution() {
         ArrayList<String> answers = phrases.getAnswers();
-        answer1.setText(answers.get(0));
+        answer1.setText("  " + answers.get(0));
         if (answers.size() > 1) {
-            answer2.setText(answers.get(1));
+            answer2.setText("  " + answers.get(1));
         }
     }
 
@@ -54,7 +54,7 @@ public class QuizzerController implements Initializable {
             phrases.getPhraseCounterString();
             Main.setPage(getClass().getResource("/View/UnknownPhrasePage.fxml"));
         } else {
-            question.setText(phrases.getQuestion());
+            question.setText("  " + phrases.getQuestion());
             answer1.setText("");
             answer2.setText("");
             phraseCounter.setText(phrases.getPhraseCounterString());

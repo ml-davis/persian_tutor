@@ -30,7 +30,7 @@ public class PopupWindow {
 
         int width = 400, height = 200;
         Scene scene = new Scene(window, width, height);
-        scene.getStylesheets().add("Style/DarkTheme.css");
+        scene.getStylesheets().add("Resources/CSS/DarkTheme.css");
 
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.setScene(scene);

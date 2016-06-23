@@ -8,7 +8,7 @@
 <VBox fx:controller="Controller.UnknownPhraseController" xmlns:fx="http://javafx.com/fxml" alignment="CENTER" id="app" spacing="20">
     <padding> <Insets left="150" right="150"/> </padding>
 
-    <Text text="Checked Phrases" id="title"/>
+    <Text text="Checked Phrases" id="unitText"/>
 
     <HBox spacing="20">
         <Button text="Exit" onAction="#goToBrowserPage"/>

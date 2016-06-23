@@ -588,7 +588,7 @@ public class Dictionary {
         phrases.add(new Phrase("Chand taa maasheen daar'i?", "How many cars do you have?"));
         phrases.add(new Phrase("Man panj masheen daar'am", "I have five cars"));
         phrases.add(new Phrase("Man panj taa masheen daar'am", "I have five [units] of cars"));
-        phrases.add(new Phrase("docharkhe", "bicycle")); // end lesson 22
+        phrases.add(new Phrase("docharkhe", "bicycle"));
         phrases.add(new Phrase("mehmuni", "party"));
         phrases.add(new Phrase("Mehmuni chetor bud?", "How was the party?"));
         phrases.add(new Phrase("Khub bud", "It was good"));
@@ -723,7 +723,7 @@ public class Dictionary {
         phrases.add(new Phrase("Ghaza haser shod", "The food became ready"));
         phrases.add(new Phrase("Haser shod'am", "I became ready"));
         phrases.add(new Phrase("fekr keird", "thought"));
-        phrases.add(new Phrase("Chi fekr keird?", "What did he/she think?")); // end lesson 25
+        phrases.add(new Phrase("Chi fekr keird?", "What did he/she think?"));
         phrases.add(new Phrase("rooye (roo)", "on (on top)"));
         phrases.add(new Phrase("zire", "under"));
         phrases.add(new Phrase("meez", "table"));
@@ -804,14 +804,14 @@ public class Dictionary {
         phrases.add(new Phrase("ma mia'im", "we come"));
         phrases.add(new Phrase("shoma mia'in", "you come (plural/formal)"));
         phrases.add(new Phrase("unha mi'an", "they come"));
-        phrases.add(new Phrase("mir'i", "you go")); // end lesson 27
+        phrases.add(new Phrase("mir'i", "you go"));
         phrases.add(new Phrase("Be kar mir'am", "I go to work"));
         phrases.add(new Phrase("Be kar mir'im", "We go to work"));
         phrases.add(new Phrase("heir rooz", "every day"));
         phrases.add(new Phrase("Heir rooz, be kar mir'am", "Every day, I go to work"));
-        phrases.add(new Phrase("heirr hafte", "every week"));
-        phrases.add(new Phrase("Heirr hafte, be kelaas'e yoga mir'am", "Every week, I go to yoga class"));
-        phrases.add(new Phrase("heirr maa", "every month"));
+        phrases.add(new Phrase("heir hafte", "every week"));
+        phrases.add(new Phrase("Heir hafte, be kelaas'e yoga mir'am", "Every week, I go to yoga class"));
+        phrases.add(new Phrase("heir maa", "every month"));
         phrases.add(new Phrase("Heir maa, be khune'ye madeir zan'am mir'am", "Every month, I go to my mother in law's house"));
         phrases.add(new Phrase("madeir zan'am", "my mother-in-law"));
         phrases.add(new Phrase("heir saal", "every year"));
@@ -819,7 +819,7 @@ public class Dictionary {
         phrases.add(new Phrase("rooz'ee", "each day"));
         phrases.add(new Phrase("rooz'ee yek bar", "once each day"));
         phrases.add(new Phrase("yek bar", "one time"));
-        phrases.add(new Phrase("rooz'ee yek bar be estakht mir'am", "I go to the pool once a day"));
+        phrases.add(new Phrase("Rooz'ee yek bar be estakht mir'am", "I go to the pool once a day"));
         phrases.add(new Phrase("rooz'ee do bar", "two times each day"));
         phrases.add(new Phrase("heir do rooz yek bar", "once every two days (every two days one time)"));
         phrases.add(new Phrase("hafte'ee", "each week"));
@@ -831,30 +831,30 @@ public class Dictionary {
         phrases.add(new Phrase("Maa'hee yek bar, be Dallas mir'am", "Once a month, I go to Dallas"));
         phrases.add(new Phrase("Heir chahar maa yek bar, be Dallas mir'am", "Every four months, I go to Dallas"));
         phrases.add(new Phrase("Saal'ee yek bar, be Hawaii mir'am", "Once a year, I go to Hawaii"));
-        phrases.add(new Phrase("Heir rooz, aashpazi mikhon'am", "Every day I cook"));
+        phrases.add(new Phrase("Heir rooz aashpazi mikhon'am", "Every day I cook"));
         phrases.add(new Phrase("Heir do rooz yek bar aashpazi mikhon'am ", "Every other day I cook"));
         phrases.add(new Phrase("Heir chand vakht yek bar aashpazi mikhon'i?", "How often do you cook?"));
         phrases.add(new Phrase("Heir chand vakht yek bar be Dallas mir'i?", "How often do you go to Dallas?"));
         phrases.add(new Phrase("Heir do se hafte yek bar be Dallas mir'am", "Every two or three weeks, I go to Dallas"));
-        phrases.add(new Phrase("Daar'am naahar mikhor'am", "I'm currently eating lunch"));
-        phrases.add(new Phrase("Daar'am mi'am", "I'm coming"));
-        phrases.add(new Phrase("Daar'i mia'i?", "Are you coming?"));
-        phrases.add(new Phrase("Daar'e mia'd", "He/she is coming"));
-        phrases.add(new Phrase("Daar'im mia'im", "We are coming"));
-        phrases.add(new Phrase("Daar'in mia'in", "You are coming (plural/formal)"));
-        phrases.add(new Phrase("Daar'an mi'an", "They are coming"));
-        phrases.add(new Phrase("Daar'am mikhor'am", "I'm eating"));
-        phrases.add(new Phrase("Daar'e mikhor'e", "He/she is eating"));
-        phrases.add(new Phrase("Daar'an mikhor'an", "They are eating"));
+        phrases.add(new Phrase("Daar'am naahar mikhor'am", "I'm (currently) eating lunch"));
+        phrases.add(new Phrase("Daar'am mi'am", "I'm (currently) coming"));
+        phrases.add(new Phrase("Daar'i mia'i?", "Are you (currently) coming?"));
+        phrases.add(new Phrase("Daar'e mia'd", "He/she is (currently) coming"));
+        phrases.add(new Phrase("Daar'im mia'im", "We are (currently) coming"));
+        phrases.add(new Phrase("Daar'in mia'in", "You are (currently) coming (plural/formal)"));
+        phrases.add(new Phrase("Daar'an mi'an", "They are (currently) coming"));
+        phrases.add(new Phrase("Daar'am mikhor'am", "I'm (currently) eating"));
+        phrases.add(new Phrase("Daar'e mikhor'e", "He/she is (currently) eating"));
+        phrases.add(new Phrase("Daar'an mikhor'an", "They are (currently) eating"));
         phrases.add(new Phrase("nishastan", "to sit (infinitive)"));
         phrases.add(new Phrase("sheen", "sit (present stem)"));
         phrases.add(new Phrase("misheen'am", "I sit"));
         phrases.add(new Phrase("misheen'i", "you sit"));
-        phrases.add(new Phrase("besheen'in", "sit!"));
+        phrases.add(new Phrase("besheen'in", "sit! (formal imperative)"));
         phrases.add(new Phrase("Lotfan besheen'in", "Please sit (formal)"));
         phrases.add(new Phrase("Befarma'in besheen'in", "Please go ahead and sit (formal)"));
         phrases.add(new Phrase("befarma'in", "please go ahead (formal)"));
-        phrases.add(new Phrase("besheen", "you sit"));
+        phrases.add(new Phrase("besheen", "sit! (imperative)"));
         phrases.add(new Phrase("lotfan besheen", "please sit"));
         phrases.add(new Phrase("befarma besheen", "please go ahead and sit"));
         phrases.add(new Phrase("Lotfan inja besheen", "Please sit here"));
@@ -864,14 +864,13 @@ public class Dictionary {
         phrases.add(new Phrase("zar", "to put (present stem)"));
         phrases.add(new Phrase("bezar", "you put"));
         phrases.add(new Phrase("Bezar rooye meez", "Put it on the table"));
-        phrases.add(new Phrase("Bezar payeen", "Put it down"));
-        phrases.add(new Phrase("Ketaab'o bezar payeen", "Put down the book"));
+        phrases.add(new Phrase("Bezar paayin", "Put it down"));
+        phrases.add(new Phrase("Ketaab'o bezar paayin", "Put down the book"));
         phrases.add(new Phrase("Ketaab'o bezar rooye meez", "Put the book on the table"));
         phrases.add(new Phrase("na'khord'am", "I didn't eat"));
         phrases.add(new Phrase("Dirooz naahar na'khord'am", "I didn't eat lunch yesterday"));
         phrases.add(new Phrase("Emrooz naahar khord'am", "I ate lunch today"));
-        phrases.add(new Phrase("Emrooz naahar khord'am", "I ate lunch today"));
-        phrases.add(new Phrase("Daar'i chi kar mikhor'i?", "What are you (currently) doing?"));
+        phrases.add(new Phrase("Daar'i chi kar mikhon'i?", "What are you (currently) doing?"));
         phrases.add(new Phrase("khor", "eat (present stem)"));
         phrases.add(new Phrase("lotfan bokhor", "please eat"));
         phrases.add(new Phrase("lotfan nakhor", "please don't eat"));
@@ -882,8 +881,8 @@ public class Dictionary {
         phrases.add(new Phrase("Ba madeir'am sohbat mikhon'am", "I'm speaking to my mom"));
         phrases.add(new Phrase("Sohbat bokhon'am?", "Shall I speak?"));
         phrases.add(new Phrase("Sohbat bokhon'im", "Let's talk"));
-        phrases.add(new Phrase("Sohbat bokhon'an", "Let them talk"));
-        phrases.add(new Phrase("Bebakhshid baraa'ye farsi'ye man, vali daar'am sai mikhonam yaad begiram", "Sorry for my Persian, but I'm trying to learn")); // begin: azin taught me
+        phrases.add(new Phrase("Sohbat bokhon'an", "Let them talk")); // END: ChaiAndConversation Unit 3
+        phrases.add(new Phrase("Bebakhshid baraa'ye farsi'ye man, vali daar'am sai mikhonam yaad begiram", "Sorry for my Persian, but I'm trying to learn")); // BEGIN: azin taught me
         phrases.add(new Phrase("ye dun'e di ge", "one more"));
         phrases.add(new Phrase("do taa di ge", "two more"));
         phrases.add(new Phrase("se taa di ge", "three more"));
@@ -892,6 +891,6 @@ public class Dictionary {
         phrases.add(new Phrase("khotkar", "pen"));
         phrases.add(new Phrase("medaat", "pencil"));
         phrases.add(new Phrase("paak-khon", "eraser"));
-        phrases.add(new Phrase("zameen", "Earth")); // end: azin taught me
+        phrases.add(new Phrase("zameen", "Earth")); // END: azin taught me
     }
 }

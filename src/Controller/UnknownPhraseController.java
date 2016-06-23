@@ -34,6 +34,7 @@ public class UnknownPhraseController implements Initializable {
                     "Click exit to return to main page.");
             window.display();
         } else {
+            System.out.println();
             Main.setPage(getClass().getResource("/View/QuizzerPage.fxml"));
         }
     }

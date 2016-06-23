@@ -7,6 +7,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.MenuBar;
 import javafx.scene.image.Image;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -26,7 +27,9 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception {
         primaryStage.setTitle("Persian Tutor 1.1");
 
-        borderPane.getStylesheets().add("/Style/DarkTheme.css");
+        // load resources
+        borderPane.getStylesheets().add("/Resources/CSS/DarkTheme.css");
+        Font.loadFont(Main.class.getResource("/Resources/Fonts/beyond_the_mountains.ttf").toExternalForm(), 10);
 
         MenuBar menuBar = FXMLLoader.load(getClass().getResource("/View/MenuBar.fxml"));
         borderPane.setTop(menuBar);

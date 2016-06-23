@@ -77,7 +77,6 @@ public class QuizzerController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         answer2 = new Text();
         textField = new TextField();
-        textField.setPrefWidth(1000);
         phrases.loadPhrases();
         getQuestion();
         loadMainPanel();

@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.GridPane?>
 
 <VBox fx:controller="Controller.QuizzerController" xmlns:fx="http://javafx.com/fxml" alignment="TOP_LEFT" id="app" spacing="20">
-    <padding> <Insets top="170" right="350" bottom="300" left="350"/> </padding>
+    <padding> <Insets top="145" right="250" bottom="300" left="250"/> </padding>
 
     <Text id="title" text="Persian Tutor" wrappingWidth="600"/>
 
@@ -21,10 +21,11 @@
     </GridPane>
 
     <HBox spacing="20">
+        <padding> <Insets top="40"/> </padding>
         <CheckBox fx:id="unknownPhraseCheckBox"/>
         <VBox fx:id="mainPanel" spacing="15">
-            <Text fx:id="question" text="" wrappingWidth="600"/>
-            <Text fx:id="answer1" text="" wrappingWidth="600"/>
+            <Text fx:id="question" text="" wrappingWidth="750"/>
+            <Text fx:id="answer1" text=""/>
             <!-- answer2 and textfield injected by controller -->
         </VBox>
 

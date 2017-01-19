@@ -30,6 +30,8 @@ public class Main extends Application {
         // load resources
         borderPane.getStylesheets().add("/Resources/CSS/DarkTheme.css");
         Font.loadFont(Main.class.getResource("/Resources/Fonts/beyond_the_mountains.ttf").toExternalForm(), 10);
+        Font.loadFont(Main.class.getResource("/Resources/Fonts/Roboto-Medium.ttf").toExternalForm(), 10);
+        Font.loadFont(Main.class.getResource("/Resources/Fonts/SourceCodePro-Semibold.ttf").toExternalForm(), 10);
 
         MenuBar menuBar = FXMLLoader.load(getClass().getResource("/View/MenuBar.fxml"));
         borderPane.setTop(menuBar);

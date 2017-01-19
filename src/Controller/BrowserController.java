@@ -29,7 +29,7 @@ public class BrowserController implements Initializable {
 
     @FXML
     public void initializeQuiz() {
-        Main.setPage(getClass().getResource("/View/SettingsPage.fxml"));
+        Main.setPage(getClass().getResource("/View/QuizSettings.fxml"));
     }
 
     @FXML
@@ -48,7 +48,7 @@ public class BrowserController implements Initializable {
         textArea = new TextArea();
         textArea.setText(dictionary.getUnitString(pageIndex + 1));
         textArea.setEditable(false);
-        textArea.setPrefHeight(450);
+        textArea.setPrefHeight(Integer.MAX_VALUE);
         unitText.setText("Unit " + (pageIndex + 1));
         return textArea;
     }

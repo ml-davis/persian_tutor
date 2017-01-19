@@ -24,16 +24,15 @@
         <padding> <Insets top="40"/> </padding>
         <CheckBox fx:id="unknownPhraseCheckBox"/>
         <VBox fx:id="mainPanel" spacing="15">
-            <Text fx:id="question" text="" wrappingWidth="750"/>
-            <Text fx:id="answer1" text=""/>
+            <Text fx:id="question" styleClass="quiz" wrappingWidth="800"/>
+            <Text fx:id="answer1" styleClass="quiz"/>
             <!-- answer2 and textfield injected by controller -->
         </VBox>
-
     </HBox>
 
     <HBox spacing="20">
         <padding> <Insets top="50"/> </padding>
-        <HBox prefWidth="440" spacing="20">
+        <HBox prefWidth="640" spacing="20">
             <Button text="Quit" onAction="#quitClicked"/>
             <Button text="Options" onAction="#optionsClicked"/>
         </HBox>

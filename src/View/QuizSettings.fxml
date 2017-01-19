@@ -9,7 +9,7 @@
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.Button?>
 
-<GridPane fx:controller="Controller.SettingsController" xmlns:fx="http://javafx.com/fxml" alignment="CENTER" id="app" vgap="20" hgap="20">
+<GridPane fx:controller="Controller.QuizSettingsController" xmlns:fx="http://javafx.com/fxml" alignment="CENTER" id="app" vgap="20" hgap="20">
 
     <!-- QUESTION TYPES -->
     <fx:define>

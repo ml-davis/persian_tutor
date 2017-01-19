@@ -1,3 +1,8 @@
+.root {
+    -fx-font-family: "Roboto Medium";
+    -fx-font-style: oblique;
+}
+
 .menu-bar {
     -fx-background-color: #3C3F41;
 }
@@ -19,17 +24,26 @@
 
 #title {
     -fx-font-family: "Beyond The Mountains";
-    -fx-font-size: 40px;
+    -fx-font-size: 44px;  /* 1080p */
+    /*-fx-font-size: 62px;    /* 4k */
     -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 2, 1, 1, 1);
 }
 
 #unitText {
-    -fx-font-size: 30px;
+    -fx-font-style: normal;
+    -fx-font-size: 30px;  /* 1080p */
+    /*-fx-font-size: 42px;    /* 4k */
     -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 2, 1, 1, 1);
 }
 
+.quiz {
+    -fx-font-size: 18px; /* 1080p */
+    /*-fx-font-size: 25px;    /* 4k */
+}
+
 Text {
-    -fx-font-size: 16px;
+    -fx-font-size: 15px; /* 1080p */
+    /*-fx-font-size: 21px;  /* 4k */
     -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 1, 1, 1, 1);
     -fx-fill: #ADADAD;
 }
@@ -59,17 +73,27 @@ Button {
     -fx-background-insets: 0,1,4,5,6;
     -fx-background-radius: 9,8,5,4,3;
     -fx-padding: 15 5 15 5;
-    -fx-font-family: "Helvetica";
-    -fx-font-size: 12px;
+    -fx-font-size: 12px;  /* 1080p */
+    /*-fx-font-size: 17px;    /* 4k */
     -fx-font-weight: bold;
     -fx-text-fill: white;
     -fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) , 1, 0.0 , 0 , 1);
 }
 
+Button:pressed {
+    -fx-background-color:
+            linear-gradient(#515151 0%, #161a16 25%, #262726 75%, #646464 100%),
+            linear-gradient(#010201, #2a2a2a),
+            linear-gradient(#8b8c8b 0%, #585758 20%, #313231 80%, #1e1e1e 100%),
+            linear-gradient(#797979 0%, #605f60 20%, #292a29 80%, #1c1c1c 100%),
+            linear-gradient(#6e6e6e 0%, #585858 50%, #494b49 51%, #272827 100%);
+}
+
 Hyperlink {
     -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 1, 2, 2, 2);
     -fx-text-fill: #ADADAD;
-    -fx-font-size: 30px;
+    -fx-font-size: 30px;     /* 1080p */
+    /*-fx-font-size: 42px;        /* 4k */
 }
 
 Hyperlink:focused {
@@ -85,11 +109,13 @@ Hyperlink:focused {
 @font-face {
     src: url("../Fonts/beyond_the_mountains.ttf");
     src: url("../Fonts/SourceCodePro-Semibold.ttf");
+    src: url("../Fonts/Roboto-Medium.ttf");
 }
 
 .text-area {
     -fx-font-family: "Source Code Pro Semibold";
     -fx-text-fill: #ADADAD;
+    /*-fx-font-size: 18px;    /* 4k */
 }
 
 .text-area .content {
@@ -97,5 +123,15 @@ Hyperlink:focused {
 }
 
 .text-field {
-    -fx-font-size: 16px;
+    -fx-font-size: 18px;  /* 1080p */
+    /*-fx-font-size: 25px;    /* 4k */
+}
+
+.fontSize {
+    -fx-pref-width: 50px;
+}
+
+.fontButton {
+    -fx-padding: 11 5 11 5;
+    -fx-pref-width: 40px;
 }

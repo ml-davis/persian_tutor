@@ -1,0 +1,18 @@
+<?import javafx.scene.control.Label?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane fx:controller="Controller.PreferencesController" xmlns:fx="http://javafx.com/fxml" alignment="CENTER" id="app" vgap="20" hgap="20">
+
+    <stylesheets>
+        <URL value="@/Resources/CSS/DarkTheme.css"/>
+    </stylesheets>
+
+    <Label text="Font Size" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+    <Button text="-" styleClass="fontButton" GridPane.columnIndex="1" GridPane.rowIndex="0" onAction="#decreaseFontSize"/>
+    <TextField fx:id="fontSizeField" styleClass="fontSize" GridPane.columnIndex="2" GridPane.rowIndex="0"/>
+    <Button text="+" styleClass="fontButton" GridPane.columnIndex="3" GridPane.rowIndex="0" onAction="#increaseFontSize"/>
+
+</GridPane>

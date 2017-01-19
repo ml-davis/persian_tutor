@@ -15,7 +15,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
-public class SettingsController implements Initializable {
+public class QuizSettingsController implements Initializable {
 
     private Settings settings = Settings.getInstance();
 

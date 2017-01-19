@@ -7,8 +7,9 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 
-<VBox fx:controller="Controller.BrowserController" xmlns:fx="http://javafx.com/fxml" alignment="CENTER" id="app" spacing="20">
-    <padding> <Insets left="150" right="150"/> </padding>
+<VBox fx:controller="Controller.BrowserController" xmlns:fx="http://javafx.com/fxml" alignment="CENTER" id="app"
+      spacing="20">
+    <padding> <Insets top="100" right="150" bottom="100" left="150"/> </padding>
 
     <Text fx:id="unitText" text="Unit 1" id="unitText"/>
 
@@ -21,6 +22,7 @@
             <TextField fx:id="searchField" prefWidth="500" onKeyReleased="#search"/>
         </HBox>
     </HBox>
+
     <!-- TextArea injected by controller -->
 
     <Pagination fx:id="unitSelector"/>

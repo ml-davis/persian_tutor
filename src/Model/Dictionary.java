@@ -37,8 +37,7 @@ public class Dictionary {
         int count = 1;
         ArrayList<Phrase> unitPhrases = getUnit(unit);
         for (Phrase phrase : unitPhrases) {
-            s += String.format("%-5s%-60s%n%-5s%-60s%n%n", count++, phrase.getEnglishText(), "", phrase.getTransliteration());
-//            s += count++ + "\t" + phrase.getEnglishText() + "\n\t" + phrase.getTransliteration() + "\n\n";
+            s += String.format("%-5s%-60s%n%5s%-60s%n%n", count++ + ".", phrase.getEnglishText(), "", phrase.getTransliteration());
         }
 
         return s;
@@ -128,7 +127,7 @@ public class Dictionary {
         phrases.add(new Phrase("chagh", "fat"));
         phrases.add(new Phrase("khoshtip", "handsome"));
         phrases.add(new Phrase("sarboland", "proud"));
-        phrases.add(new Phrase("rahat assoodeh", "relieved"));
+        phrases.add(new Phrase("raahat assoodeh", "relieved"));
         phrases.add(new Phrase("ahmagh", "silly"));
         phrases.add(new Phrase("seposkuzar", "thankful"));
         phrases.add(new Phrase("barodar", "brother"));
@@ -144,7 +143,7 @@ public class Dictionary {
         phrases.add(new Phrase("In khaheir'e man", "This is my sister"));
         phrases.add(new Phrase("Ishun pedare manand", "He is my father"));
         phrases.add(new Phrase("Esmesh Lodan'e", "his/her name is"));
-        phrases.add(new Phrase("Esmeshun Mariam'e", "his/her name is Mariam(formal)"));
+        phrases.add(new Phrase("Esmeshun Mariam'e", "His/her name is Mariam(formal)"));
         phrases.add(new Phrase("Man ye khaheir daar'am", "I have a sister"));
         phrases.add(new Phrase("Man ye barodar daar'am, esmesh Mark hast", "I have a brother, his name is Mark"));
         phrases.add(new Phrase("Esmashun Sara va Mariam hast", "Their names are Sara and Mariam"));
@@ -169,27 +168,27 @@ public class Dictionary {
         phrases.add(new Phrase("Bale, karam'o doost daar'am", "Yes, I like my job"));
         phrases.add(new Phrase("Na, karam'o doost nadaar'am", "No, I don't like my job"));
         phrases.add(new Phrase("Man kar nemikhonam", "I don't work"));
-        phrases.add(new Phrase("Man bikaaram", "I'm without a job"));
+        phrases.add(new Phrase("Man bikaar'am", "I'm without a job"));
         phrases.add(new Phrase("Kar mikhonam", "I work"));
         phrases.add(new Phrase("Man basneshaste hastam", "I am retired"));
-        phrases.add(new Phrase("shucolate", "chocolate"));
+        phrases.add(new Phrase("shocolate", "chocolate"));
         phrases.add(new Phrase("tabiat", "nature"));
         phrases.add(new Phrase("moosighri", "music"));
-        phrases.add(new Phrase("Man shucolate doost daar'am", "I like chocolate"));
+        phrases.add(new Phrase("Man shocolate doost daar'am", "I like chocolate"));
         phrases.add(new Phrase("Man tabiat kheili doost daar'am", "I really like nature"));
         phrases.add(new Phrase("Man Charlie Chaplin'o doost daar'am", "I like Charlie Chaplin"));
         phrases.add(new Phrase("Doost daar'am film bebinam", "I like to watch movies"));
         phrases.add(new Phrase("Doost daar'am ketaab bekhunam", "I like to read books"));
-        phrases.add(new Phrase("Doost daar'am varzesh bokhonam", "I like exercising"));
-        phrases.add(new Phrase("Doost daar'am shucolate bokhoram", "I like to eat chocolate"));
-        phrases.add(new Phrase("Doost daar'am Farsi yaad begiram", "I like to learn Persiahn"));
-        phrases.add(new Phrase("Hale shoma chetore?", "How are you? (formal)"));
+        phrases.add(new Phrase("Doost daar'am varzesh bokonam", "I like exercising"));
+        phrases.add(new Phrase("Doost daar'am shocolate bokhoram", "I like to eat chocolate"));
+        phrases.add(new Phrase("Doost daar'am Farsi yaad begiram", "I like to learn Persian"));
+        phrases.add(new Phrase("Haale shoma chetore?", "How are you? (formal)"));
         phrases.add(new Phrase("Chi doost daar'i?", "What do you like?"));
 
         // unit 2
         phrases.add(new Phrase("Esm'am Matt'e", "My name is Matt (short-form)"));
         phrases.add(new Phrase("Esm'am Layla'st", "My name is Layla (short-form)"));
-        phrases.add(new Phrase("khale", "aunt (mother's sister)"));
+        phrases.add(new Phrase("khaale", "aunt (mother's sister)"));
         phrases.add(new Phrase("dai", "uncle (mother's brother)"));
         phrases.add(new Phrase("ame", "aunt (father's sister)"));
         phrases.add(new Phrase("amu", "uncle (father's brother)"));
@@ -203,7 +202,7 @@ public class Dictionary {
         phrases.add(new Phrase("Koja'i?", "Where are you?"));
         phrases.add(new Phrase("Chera na?", "Why not?"));
         phrases.add(new Phrase("In kie?", "Who is this?"));
-        phrases.add(new Phrase("Chetor pishe mire?", "How's it going?"));
+        phrases.add(new Phrase("Chetor pish mire?", "How's it going?"));
         phrases.add(new Phrase("roshan bolonde", "blonde")); // END: ChaiAndConversation Unit 1
         phrases.add(new Phrase("sabzeh", "brunette"));   // BEGIN: yt
         phrases.add(new Phrase("moaafegh", "agreeable"));
@@ -212,28 +211,28 @@ public class Dictionary {
         phrases.add(new Phrase("khoshhall", "happy"));
         phrases.add(new Phrase("mehraboon", "nice"));
         phrases.add(new Phrase("por energie", "energetic")); // END: yt
-        phrases.add(new Phrase("zaban", "language")); // BEGIN: ChaiAndConversation Unit 2
-        phrases.add(new Phrase("Farsi sohbat mikhon'am", "I speak Persiahn"));
-        phrases.add(new Phrase("To Farsi sohbat mikhon'i?", "Do you speak Persiahn?"));
-        phrases.add(new Phrase("Farsi sohbat nemikhon'am", "I don't speak Persiahn"));
-        phrases.add(new Phrase("Kami farsi sohbat mikhon'am", "I speak a bit of Persiahn"));
+        phrases.add(new Phrase("zabaan", "language")); // BEGIN: ChaiAndConversation Unit 2
+        phrases.add(new Phrase("Farsi sohbat mikon'am", "I speak Persian"));
+        phrases.add(new Phrase("To Farsi sohbat mikon'i?", "Do you speak Persian?"));
+        phrases.add(new Phrase("Farsi sohbat nemikon'am", "I don't speak Persian"));
+        phrases.add(new Phrase("Kami farsi sohbat mikon'am", "I speak a bit of Persian"));
         phrases.add(new Phrase("englisi", "english"));
         phrases.add(new Phrase("faransavi", "french"));
         phrases.add(new Phrase("mifam'am", "I understand"));
-        phrases.add(new Phrase("Farsi mifam'am", "I understand Persiahn"));
-        phrases.add(new Phrase("Kami Farsi mifam'am", "I understand a bit of Persiahn"));
-        phrases.add(new Phrase("To Farsi mifam'i?", "Do you understand Persiahn?"));
-        phrases.add(new Phrase("Farsi nemifam'am", "I don't understand Persiahn"));
+        phrases.add(new Phrase("Farsi mifam'am", "I understand Persian"));
+        phrases.add(new Phrase("Kami Farsi mifam'am", "I understand a bit of Persian"));
+        phrases.add(new Phrase("To Farsi mifam'i?", "Do you understand Persian?"));
+        phrases.add(new Phrase("Farsi nemifam'am", "I don't understand Persian"));
         phrases.add(new Phrase("bebakhshid", "Excuse me/sorry"));
         phrases.add(new Phrase("Daar'am Farsi yaad migiram", "I'm currently learning Persian"));
         phrases.add(new Phrase("lotfan", "please"));
         phrases.add(new Phrase("yavoshtar", "slower"));
-        phrases.add(new Phrase("Lotfan yavoshtar sohbat khon", "Please speak slower"));
+        phrases.add(new Phrase("Lotfan yavoshtar sohbat kon", "Please speak slower"));
         phrases.add(new Phrase("mishe", "is it possible"));
-        phrases.add(new Phrase("Mishe yavoshtar sohbat khon'i?", "Could you speak slower?"));
+        phrases.add(new Phrase("Mishe yavoshtar sohbat kon'i?", "Could you speak slower?"));
         phrases.add(new Phrase("Yavoshtar lotfan", "Slower please"));
-        phrases.add(new Phrase("tekrar", "repeat"));
-        phrases.add(new Phrase("Mishe tekrar khon'i?", "Could you repeat?"));
+        phrases.add(new Phrase("tekraar", "repeat"));
+        phrases.add(new Phrase("Mishe tekrar kon'i?", "Could you repeat?"));
         phrases.add(new Phrase("sefr", "zero"));
         phrases.add(new Phrase("yek", "one"));
         phrases.add(new Phrase("do", "two"));
@@ -290,8 +289,8 @@ public class Dictionary {
 
         // unit 3
         phrases.add(new Phrase("hamseir", "spouse"));
-        phrases.add(new Phrase("Be Farsi chi mishe?", "What is it in Persiahn?"));
-        phrases.add(new Phrase("'Camera' be Farsi chi mishe?", "What is a camera called in Persiahn?"));
+        phrases.add(new Phrase("Be Farsi chi mishe?", "What is it in Persian?"));
+        phrases.add(new Phrase("'Camera' be Farsi chi mishe?", "What is a camera called in Persian?"));
         phrases.add(new Phrase("durbeen", "camera"));
         phrases.add(new Phrase("janvier", "January"));
         phrases.add(new Phrase("fevrier", "February"));
@@ -350,11 +349,11 @@ public class Dictionary {
         phrases.add(new Phrase("khune", "home"));
         phrases.add(new Phrase("khune'ye man", "my house"));
         phrases.add(new Phrase("khune'ye ma", "our house"));
-        phrases.add(new Phrase("khune'ye onha", "their house"));
+        phrases.add(new Phrase("khune'ye oonha", "their house"));
         phrases.add(new Phrase("In khune'ye kie?", "Whose house is this?"));
         phrases.add(new Phrase("In khune'ye man'e", "It's my house"));
         phrases.add(new Phrase("In khune'ye to'st (to'e)", "It's your house"));
-        phrases.add(new Phrase("In khune'ye onha'st", "It's their house"));
+        phrases.add(new Phrase("In khune'ye oonha'st", "It's their house"));
         phrases.add(new Phrase("In khune'ye shoma'st", "It's your house (plural/formal)"));
         phrases.add(new Phrase("In khune'ye ma'st", "It's our house"));
         phrases.add(new Phrase("In khune'ye ishun'e", "It's his/her house (if person is present)"));
@@ -367,7 +366,7 @@ public class Dictionary {
         phrases.add(new Phrase("cinama", "movie theatre"));
         phrases.add(new Phrase("muse", "museum"));
         phrases.add(new Phrase("bonk", "bank"));
-        phrases.add(new Phrase("baazar (paasaj)", "shopping center"));
+        phrases.add(new Phrase("baazaar (paasaj)", "shopping center"));
         phrases.add(new Phrase("vasate shahr (markaze shahr)", "city center"));
         phrases.add(new Phrase("shahr", "city"));
         phrases.add(new Phrase("estakhr", "pool"));
@@ -517,7 +516,7 @@ public class Dictionary {
         phrases.add(new Phrase("Azizam'i", "You are my dear"));
         phrases.add(new Phrase("jigar", "liver (sweet word to call someone)"));
         phrases.add(new Phrase("ghorbunet beram", "I hope I become a sacrifice for you"));
-        phrases.add(new Phrase("Kheili ziba'i/khoshgel'i", "You are very beautiful"));
+        phrases.add(new Phrase("Kheili ziba'i", "You are very beautiful"));
         phrases.add(new Phrase("Kheili khoshgel'i", "You are very pretty"));
         phrases.add(new Phrase("Che khoshgel'i", "How pretty you are"));
         phrases.add(new Phrase("boos bed'e", "give me a kiss"));
@@ -527,11 +526,11 @@ public class Dictionary {
         phrases.add(new Phrase("man doost-dokhtar daar'am", "I have a girlfriend"));
         phrases.add(new Phrase("man doost-pesar daar'am", "I have a boyfriend"));
         phrases.add(new Phrase("man naamzad daar'am", "I have a fiance"));
-        phrases.add(new Phrase("vala", "truthfully"));
+        phrases.add(new Phrase("vaalaa", "truthfully"));
         phrases.add(new Phrase("jaaye Ladan khaali'e", "Ladan is missed"));
         phrases.add(new Phrase("Emrooz che roozi'e?", "What day is it?"));
         phrases.add(new Phrase("maa", "month"));
-        phrases.add(new Phrase("basle", "season"));  // END: Unit 2
+        phrases.add(new Phrase("fasle", "season"));  // END: Unit 2
         phrases.add(new Phrase("man hast'am", "I am")); // BEGIN: Unit 3
         phrases.add(new Phrase("to hast'i", "you are"));
         phrases.add(new Phrase("ou hast", "he/she is"));
@@ -883,14 +882,123 @@ public class Dictionary {
         phrases.add(new Phrase("Sohbat bokhon'im", "Let's talk"));
         phrases.add(new Phrase("Sohbat bokhon'an", "Let them talk")); // END: ChaiAndConversation Unit 3
         phrases.add(new Phrase("Bebakhshid baraa'ye farsi'ye man, vali daar'am sai mikhonam yaad begiram", "Sorry for my Persian, but I'm trying to learn")); // BEGIN: azin taught me
-        phrases.add(new Phrase("ye dun'e di ge", "one more"));
-        phrases.add(new Phrase("do taa di ge", "two more"));
-        phrases.add(new Phrase("se taa di ge", "three more"));
+        phrases.add(new Phrase("ye dun'e dige", "one more"));
+        phrases.add(new Phrase("do taa dige", "two more"));
+        phrases.add(new Phrase("se taa dige", "three more"));
         phrases.add(new Phrase("as in va", "this way"));
         phrases.add(new Phrase("as un va", "that way"));
         phrases.add(new Phrase("khotkar", "pen"));
         phrases.add(new Phrase("medaat", "pencil"));
         phrases.add(new Phrase("paak-khon", "eraser"));
         phrases.add(new Phrase("zameen", "Earth")); // END: azin taught me
+        phrases.add(new Phrase("mashghul bud'am", "I've been busy (I was busy)"));
+        phrases.add(new Phrase("Allon se maa'he ke to ro na'did'am", "I haven't seen you in three months"));
+        phrases.add(new Phrase("jedi", "really"));
+        phrases.add(new Phrase("Daar in se maa chi kar keird'i?", "What did you do in the last three months?"));
+        phrases.add(new Phrase("taghaaza keird'am", "applied"));
+        phrases.add(new Phrase("khob", "well (filler word Ex. 'well first I ...')"));
+        phrases.add(new Phrase("daaneshga", "university"));
+
+        // unit 9
+        phrases.add(new Phrase("Khob aval, baraa'ye daaneshga taghaaza keird'am", "Well first, I applied for university"));
+        phrases.add(new Phrase("baraa'ye man", "for me"));
+        phrases.add(new Phrase("baraa'ye to", "for you"));
+        phrases.add(new Phrase("reshte", "subject"));
+        phrases.add(new Phrase("Baraa'ye che reshte'i", "For what subject?"));
+        phrases.add(new Phrase("pezeshghi", "med school"));
+        phrases.add(new Phrase("pezesh", "physician"));
+        phrases.add(new Phrase("Gabul shod'i?", "Were you accepted?"));
+        phrases.add(new Phrase("Gabul shod'am", "I was accepted"));
+        phrases.add(new Phrase("mobarak baashe", "congratulations"));
+        phrases.add(new Phrase("dige", "other"));
+        phrases.add(new Phrase("Dige chi?", "What else?"));
+        phrases.add(new Phrase("Dige chi kar keird'i?", "What else did you do?"));
+        phrases.add(new Phrase("Ba Ladan raft'am Espanya", "I went to Spain with Ladan"));
+        phrases.add(new Phrase("famil", "family"));
+        phrases.add(new Phrase("Unja kheili famil daar'e", "He/she has a lot of family there"));
+        phrases.add(new Phrase("khosh behaal'et", "lucky for you"));
+        phrases.add(new Phrase("Koja'ye Espanya?", "Where in Spain?"));
+        phrases.add(new Phrase("ba-d (ba-d'esh)", "after/next/later"));
+        phrases.add(new Phrase("Aval raft'im Barcelona, va ba-d raft'im Madrid", "First we went to Barcelona, then we went to Madrid"));
+        phrases.add(new Phrase("khaanevaade", "family (alternative way to say famil)"));
+        phrases.add(new Phrase("Va khaanevaad'am'o did'am", "And I saw my family"));
+        phrases.add(new Phrase("kholee", "a lot"));
+        phrases.add(new Phrase("kaif", "delight"));
+        phrases.add(new Phrase("baaham", "together"));
+        phrases.add(new Phrase("Baaham kholee kaif keird'im", "Together we had a delightful time"));
+        phrases.add(new Phrase("shanid'am", "I heard"));
+        phrases.add(new Phrase("Shanid'am mia'i Dallas", "I heard you were coming to Dallas"));
+        phrases.add(new Phrase("Bale dorost'e", "Yes that's correct"));
+        phrases.add(new Phrase("Emshab miras'am", "I arrive tonight"));
+        phrases.add(new Phrase("Has kay mia'i khune'ye ma?", "So when are you coming to our house?"));
+        phrases.add(new Phrase("Zud mia'm, feirda chetor?", "I will come soon, how about tomorrow?"));
+        phrases.add(new Phrase("Mia'i baraa'ye naahar?", "Will you come for lunch?"));
+        phrases.add(new Phrase("zaamat", "hard work/trouble"));
+        phrases.add(new Phrase("Na, zaamat nakeshid", "No, don't go through the trouble"));
+        phrases.add(new Phrase("Zaamati nist", "It's no trouble"));
+        phrases.add(new Phrase("migir'im", "we will get"));
+        phrases.add(new Phrase("Doost dar'i ber'im cinama?", "Would you like to go to the cinema?"));
+        phrases.add(new Phrase("Che film'ee?", "What movie?"));
+        phrases.add(new Phrase("Fekr mikhonam Les Miserables faransavi'e", "I think Les Miserable is French"));
+        phrases.add(new Phrase("mig'i", "you say"));
+        phrases.add(new Phrase("Raast mig'i", "You're right (right you say)"));
+        phrases.add(new Phrase("Ba-d as naahar mir'im cinama", "After lunch we will go to the cinema"));
+        phrases.add(new Phrase("Piruz ham mia'd?", "Will Piruz also come?"));
+        phrases.add(new Phrase("hala na", "not now"));
+        phrases.add(new Phrase("Ne'midun'am, hala bebin'im", "I don't know, we'll see"));
+        phrases.add(new Phrase("Bia be boos'imet", "Come so I can kiss you"));
+        phrases.add(new Phrase("del'am", "my heart"));
+        phrases.add(new Phrase("Del'am baraa't tang shod'e bud", "I missed you (literal: My heart became tight for you)"));
+        phrases.add(new Phrase("Man ham hamintor", "Me also"));
+        phrases.add(new Phrase("rha", "way"));
+        phrases.add(new Phrase("Rha chetor bud?", "How was the trip? (literal: how was the way)"));
+        phrases.add(new Phrase("Kheili tool keshid", "It took a long time"));
+        phrases.add(new Phrase("too rha", "on the way"));
+        phrases.add(new Phrase("Too rha tasaadof shod'e bud", "On the way an accident happened"));
+        phrases.add(new Phrase("ey vaay", "oh no"));
+        phrases.add(new Phrase("Bad joor bud?", "Was it bad?"));
+        phrases.add(new Phrase("esala", "a saying (an expression)"));
+        phrases.add(new Phrase("Be esala 'fender bender' bud", "It would be called a 'fender bender'"));
+        phrases.add(new Phrase("'Fender bender' ya nee chi?", "What is a fender bender?"));
+        phrases.add(new Phrase("khob ya nee", "well it means"));
+        phrases.add(new Phrase("josee", "trivial/insignificant"));
+        phrases.add(new Phrase("Khob ya nee josee bud", "Well it means it was insignificant"));
+        phrases.add(new Phrase("khodara shokhr", "thank god"));
+        phrases.add(new Phrase("maman-joon", "grandmother"));
+        phrases.add(new Phrase("Maman-joon inja hast'an?", "Is grandma here?"));
+        phrases.add(new Phrase("hanooz", "yet"));
+        phrases.add(new Phrase("Hanooz nayumid'an", "He/she didn't come yet"));
+        phrases.add(new Phrase("Emshab mi'an", "He/she will come tonight (formal/plural)"));
+        phrases.add(new Phrase("Ke baaham shaam bokhor'im", "So that we could have dinner together"));
+        phrases.add(new Phrase("Too khune ya birun?", "In the house or out?"));
+        phrases.add(new Phrase("Na azizam, maman-joon shaam dorost keird'am", "No dear, grandma made dinner"));
+        phrases.add(new Phrase("Baaham chai bokhor'im", "Together let's have a tea"));
+        phrases.add(new Phrase("bah bah", "yummy"));
+        phrases.add(new Phrase("michasbe", "it sticks"));
+        phrases.add(new Phrase("Chai michasbe", "Chai would really hit the spot (chai sticks)"));
+        phrases.add(new Phrase("Bah bah, allon cheghadre chai michasbe", "Mmm, tea would really hit the spot right now"));
+        phrases.add(new Phrase("Dars mikhunam", "I'm studying"));
+        phrases.add(new Phrase("Dige chi?", "What else?"));
+        phrases.add(new Phrase("Az break lezzat mibaram", "I'm enjoying my break"));
+        phrases.add(new Phrase("Neshaste poshte miz ba lebase zir", "I'm sitting at my desk in my underwear"));
+        phrases.add(new Phrase("Sharvaal", "Pants"));
+        phrases.add(new Phrase("Daram miram kharide mive", "I'm going to buy groceries"));
+        phrases.add(new Phrase("Otobus migiram", "I will take the bus"));
+        phrases.add(new Phrase("Piade migiram", "I will walk"));
+        phrases.add(new Phrase("Cornfelakes baayad bekhabam", "I need to buy cereal"));
+        phrases.add(new Phrase("Noon kharidam", "I bought bread"));
+        phrases.add(new Phrase("Man emrooz Python khaham khund", "I will study Python today"));
+        phrases.add(new Phrase("Bayad baraye mosahebe amade sham", "I need to prepare for interviews"));
+        phrases.add(new Phrase("Donbale kar migardam", "I am looking for a job"));
+        phrases.add(new Phrase("I want to be successful", "Mikham moafagh basham"));
+        phrases.add(new Phrase("Maa be Toronto mirim", "We are moving to Toronto"));
+//        phrases.add(new Phrase("", ""));
+//        phrases.add(new Phrase("", ""));
+//        phrases.add(new Phrase("", ""));
+//        phrases.add(new Phrase("", ""));
+//        phrases.add(new Phrase("", ""));
+//        phrases.add(new Phrase("", ""));
+//        phrases.add(new Phrase("", ""));
+//        phrases.add(new Phrase("", ""));
     }
 }

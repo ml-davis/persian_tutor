@@ -37,15 +37,9 @@ public class Phrase {
         return englishText.equalsIgnoreCase(query) || transliteration.equalsIgnoreCase(query);
     }
 
-    public boolean containsWord(String query) {
-        String[] englishWords = englishText.split(" ");
-        String[] transliterationWords = transliteration.split(" ");
-        for (String word : englishWords) {
-            if (word.equalsIgnoreCase(query)) {
-                return true;
-            }
-        }
-        for (String word : transliterationWords) {
+    private boolean queryContainsWord(String query, String comparison) {
+        String[] words = comparison.split(" ");
+        for (String word : words) {
             if (word.equalsIgnoreCase(query)) {
                 return true;
             }
@@ -53,21 +47,22 @@ public class Phrase {
         return false;
     }
 
-    public boolean beginsWith(String query) {
-        if (englishText.length() >= query.length()) {
-            String englishBeginning = englishText.substring(0, query.length());
-            if (englishBeginning.equalsIgnoreCase(query)) {
-                return true;
-            }
-        }
-        if (transliteration.length() >= query.length()) {
-            String transliterationBeginning = transliteration.substring(0, query.length());
-            if (transliterationBeginning.equalsIgnoreCase(query)) {
-                return true;
-            }
-        }
+    public boolean containsWord(String query) {
+        return queryContainsWord(query, englishText) || queryContainsWord(query, transliteration);
+    }
 
+    private boolean queryBeginsWith(String query, String comparison) {
+        if (comparison.length() >= query.length()) {
+            String beginning = comparison.substring(0, query.length());
+            if (beginning.equalsIgnoreCase(query)) {
+                return true;
+            }
+        }
         return false;
+    }
+
+    public boolean beginsWith(String query) {
+        return queryBeginsWith(query, englishText) || queryBeginsWith(query, transliteration);
     }
 
     public boolean contains(String query) {

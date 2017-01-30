@@ -39,7 +39,7 @@ public class Main extends Application {
         Parent root = FXMLLoader.load(currentPage);
         borderPane.setCenter(root);
 
-        primaryStage.setScene(new Scene(borderPane, 1366, 722));
+        primaryStage.setScene(new Scene(borderPane, 1366, 950));
         primaryStage.getIcons().add(new Image("/Media/Images/logo.png"));
         primaryStage.show();
     }

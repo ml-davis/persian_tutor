@@ -752,8 +752,8 @@ public class Dictionary {
         phrases.add(new Phrase("moble", "couch"));
         phrases.add(new Phrase("kenare", "by (by the side of)"));
         phrases.add(new Phrase("Telefon kenare moble", "The phone is by the couch"));
-        phrases.add(new Phrase("dakheili", "in (when describing self ex. I'm in the store)"));
-        phrases.add(new Phrase("Dakheili maghaaz'am", "I'm in the store"));
+        phrases.add(new Phrase("dakheil", "in (when describing self ex. I'm in the store)"));
+        phrases.add(new Phrase("Dakheil'e maghaaz'am", "I'm in the store"));
         phrases.add(new Phrase("tarafe chap'e", "to the left of"));
         phrases.add(new Phrase("tarafe raast'e", "to the right of"));
         phrases.add(new Phrase("Sara tarafe raast'e Mariam'e", "Sara is to the right of Mariam"));
@@ -782,8 +782,8 @@ public class Dictionary {
         phrases.add(new Phrase("Kar mikhon'am", "I work"));
         phrases.add(new Phrase("Chi kar mikhon'i?", "What are you doing?"));
         phrases.add(new Phrase("Akheire hafte, chi kar mikhon'i?", "What are you doing this weekend?"));
-        phrases.add(new Phrase("shina keirdan", "to swim (infinitive)"));
-        phrases.add(new Phrase("shina mikhon'am", "I swim"));
+        phrases.add(new Phrase("shena keirdan", "to swim (infinitive)"));
+        phrases.add(new Phrase("shena mikhon'am", "I swim"));
         phrases.add(new Phrase("tamaasha mikhon'am", "I watch"));
         phrases.add(new Phrase("Film tamaasha mikhon'am", "I watch a movie"));
         phrases.add(new Phrase("Sobhane mikhor'am", "I eat breakfast"));
@@ -992,6 +992,7 @@ public class Dictionary {
         phrases.add(new Phrase("Donbale kar migardam", "I am looking for a job"));
         phrases.add(new Phrase("I want to be successful", "Mikham moafagh basham"));
         phrases.add(new Phrase("Maa be Toronto mirim", "We are moving to Toronto"));
+        phrases.add(new Phrase("aghriban", "almost"));
 //        phrases.add(new Phrase("", ""));
 //        phrases.add(new Phrase("", ""));
 //        phrases.add(new Phrase("", ""));

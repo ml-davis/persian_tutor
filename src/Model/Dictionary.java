@@ -82,9 +82,19 @@ public class Dictionary {
         return unit <= getNumberOfUnits();
     }
 
+    public String escapeSingleQuotes(String str) {
+        return str.replace("'", "\\'");
+    }
+
+    public void printToSql() {
+        for (Phrase phrase : phrases) {
+            System.out.println("INSERT INTO phrases VALUES(NULL, '" + escapeSingleQuotes(phrase.getTransliteration()) + "', '" + escapeSingleQuotes(phrase.getEnglishText()) + "', 'farsi to be added at later date...');");
+        }
+    }
+
     private void loadDictionary() {
         // unit 1
-        phrases.add(new Phrase("Salam", "Hello", "سلام")); // BEGIN: ChaiAndConversation Unit 1
+        phrases.add(new Phrase("Salam", "Hello", "سلام"));
         phrases.add(new Phrase("Chetori?", "How are you?"));
         phrases.add(new Phrase("Khub'am", "I'm good"));
         phrases.add(new Phrase("Mersi", "Thank you"));

@@ -5,9 +5,12 @@ import java.util.ArrayList;
 
 public class DataCollector {
 
-	private static final String db_url = "jdbc:mysql://localhost:3306/persian_tutor?useSSL=false";
-	private static final String db_user = "matthew";
-	private static final String db_password = System.getenv("DB_PSWD");
+	private static final String db_host = System.getenv("DB_HOST");
+	private static final String db_port = System.getenv("DB_PORT");
+	private static final String db_name = System.getenv("DB_NAME");
+	private static final String db_user = System.getenv("DB_USER");
+	private static final String db_password = System.getenv("DB_PASSWORD");
+	private static final String db_url = "jdbc:postgresql://" + db_host + ":" + db_port + "/" + db_name;
 
 	public void getPhrases(ArrayList<Phrase> phrases) {
 
